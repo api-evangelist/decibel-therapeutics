@@ -1,8 +1,24 @@
 aid: decibel-therapeutics
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/decibel-therapeutics.png
 name: Decibel Therapeutics *
-description: 'Decibel Therapeutics * is a company surfaced as a portfolio company of gv and added to the
-  API Evangelist network as a stub for enrichment. Sector: life-sciences. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Decibel Therapeutics was a clinical-stage biotechnology company focused on gene therapies
+  for hearing loss and balance disorders. It was surfaced as a portfolio company of GV (Google Ventures)
+  and added to the API Evangelist network for enrichment. As of this enrichment pass its primary domain,
+  decibeltx.com, 301-redirects to regeneron.com, consistent with the company having been acquired/absorbed
+  by Regeneron; Decibel maintains no independent public developer portal, API, documentation, or other
+  developer surface. This profile is retained as a network lead and carries only infrastructure-level
+  (domain security) probe data.'
 url: https://raw.githubusercontent.com/api-evangelist/decibel-therapeutics/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +26,18 @@ x-backed-by:
 - gv
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: regeneron
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Life Sciences
+- Biotechnology
+- Gene Therapy
+- Pharmaceuticals
+- Hearing
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/decibel-therapeutics-domain-security.yml
 - type: Website
   url: http://decibeltx.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
